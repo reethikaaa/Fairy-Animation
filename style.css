@@ -1,0 +1,162 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   --index: calc(1vw + 1vh);
+   --text: #e7e7e0;
+   --transition: transform .75s cubic-bezier(.075, 0.5, 0, 1);
+}
+
+/* ✅ Font Import */
+@font-face {
+    font-family: raleway_f;
+    src: url(../fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: raleway_f;
+    src: url(../fonts/raleway-black.woff2);
+    font-weight: 900;
+}
+
+/* ✅ Fix Background Image */
+body {
+    background: url("img/forest.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: raleway_f, sans-serif;
+    line-height: 1.55;
+}
+
+/* ✅ Fix Three.js Container */
+#container3D {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1000; /* Keeps Fairy on top */
+}
+
+/* ✅ Sections */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+}
+
+/* ✅ Remove Background from All Containers */
+.container, .main-article__contact {
+    background: none !important; /* Completely removes any background */
+    box-shadow: none !important;
+    padding: 0 !important;
+}/* Flexbox layout to position heading left & paragraph right */
+.main-article__contact {
+    display: flex;
+    justify-content: space-between; /* Push heading left & text right */
+    align-items: center; /* Keep them aligned vertically */
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Heading on the left */
+.main-article__header {
+    text-align: left;
+    width: 40%; /* Limits width for better alignment */
+}
+
+/* Paragraph on the right */
+.main-article__contact p {
+    text-align: justify;
+    width: 50%; /* Limits width to form a square layout */
+    margin-left: auto; /* Ensures it stays on the right */
+}
+/* Swap the heading and paragraph for "The Secret Lake" */
+#description .main-article__contact {
+    display: flex;
+    justify-content: space-between; /* Push heading left & text right */
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    flex-direction: row-reverse; /* ✅ Swaps the order */
+    gap: 400px;
+}
+
+/* Heading moves to the left */
+#description .main-article__header {
+    text-align: left;
+    width: 40%;
+}
+
+/* Paragraph moves to the right */
+#description .main-article__contact p {
+    text-align:left; /* Ensures even text distribution */
+    width: 50%;
+    margin-left: auto; /* Pushes it to the right */
+    padding: 10px;
+    line-height: 1.6;
+}
+/* ✅ Ensure these styles apply ONLY to the Contact Section */
+#contact .main-article__contact {
+    display: flex;
+    flex-direction: column; /* Ensures each row is separate */
+    align-items: center; /* Center-aligns text */
+    gap: 15px; /* Adds space between lines */
+}
+
+/* ✅ Style for each row in Contact Section (Name, Email, Phone) */
+#contact .contact-item {
+    display: flex;
+    justify-content: space-between; /* Pushes label and value apart */
+    width: 60%; /* Adjust width for balance */
+    gap:150px; 
+}
+
+/* ✅ Style for labels (Name, Email, Phone) */
+#contact .contact-item h2 {
+    text-align: left;
+    width: 30%; /* Adjust width to align properly */
+}
+
+/* ✅ Style for values (Reethika, Email, Phone Number) */
+#contact .contact-item p {
+    text-align: right;
+    width: 50%; /* Ensures proper spacing */
+}
+
+
+
+
+
+/* ✅ Glowing Text Effect */
+.layers__caption, .layers__title, 
+.main-article__header, .main-article__paragraph, 
+h2, p {
+    color: #ffffff; /* White text */
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff00ff, 0 0 40px #8000ff;
+    background: none !important; /* Ensure no background is applied */
+}
+
+/* ✅ Titles */
+.layers__title, .main-article__header, h2 {
+    font-size: calc(var(--index) * 2);
+    font-weight: 900;
+    text-transform: uppercase;
+}/* ✅ Paragraphs */
+.main-article__paragraph, p {
+    max-width: calc(var(--index) * 30);
+    font-size: calc(var(--index) * 0.8); /* ✅ Decrease font size */
+    margin-top: calc(var(--index) / 1.5); /* ✅ Adjust spacing */
+    line-height: 1.4; /* ✅ Improve readability */
+}
