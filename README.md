@@ -1,72 +1,58 @@
+# 🌟 Fairy Animation Parallax Portfolio Website
 
-# Parallax Scroll Website
+An interactive and immersive 3D animated portfolio website created by **Sunkara Reethika** using **HTML**, **CSS**, **JavaScript**, and **Three.js**. It blends parallax scrolling with real-time animations for a magical web experience. ✨
 
-Description:
-The Fairy Forest Parallax Scroll Website is a captivating and immersive web experience that takes you on a journey through a mystical forest. The website incorporates parallax scrolling, stunning visuals, and enchanting storytelling to create an engaging user experience. Explore the magical realm of fairies, discover hidden dungeons, and immerse yourself in the allure of this extraordinary forest.
+---
 
-Website link - https://royaals.github.io/Parallax-scroll-website/
+## 🎯 Key Highlights
 
-## Demo
+- 🧚‍♀️ **Real-Time 3D Fairy Animation** using Three.js
+- 🌀 **Parallax Scroll Effects** to create depth and immersion
+- 🎨 **Smooth Scroll-Triggered Animations**
+- 📱 **Fully Responsive Design** across devices
+- 🛠️ **Clean and Modular Codebase** (HTML, CSS, JS)
+- 🎬 **Visually Engaging UI with Thematic Storytelling**
 
-![ezgif com-video-to-gif](https://github.com/royaals/Parallax-scroll-website/assets/104627535/4c47c580-1cfa-4f99-97ee-61b843fd39cc)
-## Tech Stack
+---
 
-**Front-end:** HTML, CSS, JavaSript
+## 🛠️ Tech Stack
 
+- 🧱 **HTML5** – Structure of the website  
+- 🎨 **CSS3** – Styling and layout  
+- 🧠 **JavaScript** – Interactivity and control  
+- 💫 **Three.js** – 3D animation engine  
+- 🔁 **GSAP** – Scroll-triggered animations (optional)  
+- 🚀 **GitHub Pages / Netlify** – For deployment (suggested)
 
+---
 
+## 📁 Project Structure
 
-## Documentation
-
-Documentation: To get started with the Parallax Scroll Website, follow these steps:
-
-1.	Clone the Repository: Clone the project repository from the provided source code.
-2.	File Structure: Familiarize yourself with the project file structure. The main files include:
-
-•	index.html: Contains the HTML structure of the website.
-
-•	style.css: Defines the styles and layout for the web pages.
-
-•	script.js: Includes the JavaScript code for scroll animations and interactivity.
-
-•	libs/gsap/: Folder containing the GSAP library and its plugins.
-
-•	img/: Directory containing the images used in the website.
-
-•	fonts/: Folder containing the font files used in the website.
-
-3.	Customize Content: Modify the HTML content, images, and text to tailor the website to your needs. You can replace the existing visuals and texts with your own to create a unique storytelling experience.
-
-4.	Customize Styling: Adjust the CSS styles in the style.css file to change the appearance of the website, including colors, fonts, and layout.
-
-5.	Enhance Interactivity: Explore the script.js file to add additional JavaScript functionality or customize the existing scroll animations.
-
-6.	Testing: Test the website locally to ensure that all the features and animations work as intended across different browsers and devices.
-
-7.	Deployment: Once you are satisfied with the modifications and testing, deploy the website to a hosting platform or web server of your choice.
+📦 Fairy-Animation-Website
+┣ 📄 index.html → Web page structure
+┣ 📄 style.css → Custom styles and layouts
+┣ 📄 script.js → Logic for animations and visuals
+┣ 📄 LICENSE.txt → MIT License under your name
+┗ 📁 assets/ → Images, 3D models, etc.
 
 
+---
 
+## 👩‍💻 Author Info
 
+- 🙋‍♀️ **Name**: Sunkara Reethika  
+- 📧 **Email**: reethikasunkara0@gmail.com  
+- 📱 **Phone**: +91 7032609842
 
-## Acknowledgements
+---
 
- - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
- - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
- - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+## 📜 License
 
+- 📝 Licensed under the **MIT License**  
+- © 2025 Sunkara Reethika – All rights reserved
 
-## Features
+---
 
-•	Parallax Scrolling: The website incorporates parallax scrolling, which creates a sense of depth and immersion as users scroll through the content.
+## 💡 Final Note
 
-•	Smooth Animations: GSAP and ScrollTrigger libraries are used to provide smooth and visually appealing animations triggered by scrolling actions.
-
-•	Engaging Storytelling: The website presents a captivating story about a fairy forest and a hidden dungeon, captivating users and keeping them engaged.
-
-•	Responsive Design: The website is designed to be responsive, ensuring a seamless experience across various devices and screen sizes.
-
-
-
-
-
+> 🔗 *Inspired by animated storytelling websites, but completely redesigned and developed independently by Reethika using custom code and original creativity.*
